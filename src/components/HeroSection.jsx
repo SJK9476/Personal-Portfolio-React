@@ -7,12 +7,12 @@ const HeroSection = () => {
         <section id="hero" className="relative h-screen flex flex-col items-center justify-center px-4">
             <div className="container max-w-4xl mx-auto text-center z-10">
                 <div className="space-y-6">
-                    <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+                    <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold tracking-tight">
                         <span className="opacity-0 animate-fade-in">Hi, I'm</span>
                         <span className="text-primary opacity-0 animate-fade-in-delay-1"> Samuel</span>
                         <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2"> King</span>
                     </h1>
-                    <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+                    <p className="text-lg md:text-xl xl:text-2xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
                         Looking for an <span className="text-primary font-semibold">enthusiastic</span> Front-End Developer to bring <span className="text-primary font-semibold">energy</span> and <span className="text-primary font-semibold">fresh skills</span> to your team?
                         <br/><br></br>I specialize in crafting <span className="text-primary font-semibold">clean, modern, and accessible</span> experiences using the latest front-end tech. I'm keen to apply my skills and grow as a developer.
                     </p>
