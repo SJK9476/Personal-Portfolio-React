@@ -4,44 +4,56 @@ import {ArrowRight, ExternalLink, Github} from "lucide-react";
 const projects = [
     {
         id: 1,
+        title: "Browser Extension Manager",
+        description: "A responsive application used to manage internet" +
+            " browser extensions with ability to toggle or remove individual" +
+            " extensions. Built using ReactJS and Tailwind",
+        image: "/extensionManager.png",
+        tags: ["HTML", "CSS", "ReactJS", "Tailwind", "Frontend"],
+        demoUrl: "https://browser-extension-manager-ui-sage.vercel.app/",
+        githubUrl: "https://github.com/SJK9476/Browser_Extension_Manager_UI",
+
+    },
+    {
+        id: 2,
         title: "Brainwave AI - SAAS Landing Page",
         description: "A visually compelling landing page for an AI powered" +
             " chat application built using ReactJS and Tailwind.",
-        image: "public/projects/Brainwave.png",
+        image: "/Brainwave.png",
         tags: ["ReactJS", "Tailwind", "Frontend"],
         demoUrl: "https://brainwave-project-flax.vercel.app/",
         githubUrl: "https://github.com/SJK9476/BrainwaveProject",
     },
     {
-        id: 2,
+        id: 3,
         title: "Movie DB - Search Application",
         description: "A multi-functional search application with real time" +
             " most popular movies as well as a trending movies section based" +
             " on data collected from user searches.",
-        image: "public/projects/ReactMovieDB.png",
+        image: "/ReactMovieDB.png",
         tags: ["ReactJS", "Tailwind", "Frontend", "Appwrite", "Hostinger"],
         demoUrl: "https://movie.king-dev.io/",
         githubUrl: "https://github.com/SJK9476/Movie-DB-React",
     },
     {
-        id: 3,
+        id: 4,
         title: "Full Stack Trivia Quiz API",
         description: "An application designed to generate a multiple choice" +
             " trivia quiz based on the selected user category with backend" +
             " functionality to return a users score.",
-        image: "public/projects/Trivia.jpg",
+        image: "/Trivia.jpg",
         tags: ["JavaScript", "Python", "Bootstrap", "MySQL", "Fullstack"],
         demoUrl: "#",
         githubUrl: "https://github.com/SJK9476/Ecareers_Bootcamp/tree/main/trivia_api",
     },
     {
-        id: 4,
+        id: 5,
         title: "My 1st Single Page Portfolio",
         description: "The first portfolio site I built for myself using the" +
             " fundamentals i'd learned from HTML, Vanilla CSS and" +
             " JavaScript. A great bench mark for the progress I've made so" +
             " far.",
-        image: "public/projects/oldportfolio.png",
+        image: "/oldportfolio.png",
         tags: ["HTML", "CSS", "JavaScript"],
         demoUrl: "https://single-page-developer-portfolio-silk.vercel.app/",
         githubUrl: "https://github.com/SJK9476/single-page-developer-portfolio",

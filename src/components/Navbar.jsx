@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {cn} from "../lib/utils";
-import {X, Menu} from "lucide-react";
+import {X, Menu, Sun, Moon} from "lucide-react";
 
 const navItems = [
     {name: "Home", href: "#hero"},
@@ -25,29 +25,33 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={cn("fixed w-full z-40 transition-all duration-300", isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5" )}
+        <nav
+            className={cn("fixed w-full z-40 transition-all duration-300", isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5")}
         >
             <div className="container flex items-center justify-between">
-                <a className="text-xl font-bold text-primary flex items-center" href="#hero">
+                <a className="text-xl font-bold text-primary flex items-center"
+                   href="#hero">
                     <span className="relative z-10">
-                        <span className="text-glow text-foreground">King • DEV</span> Portfolio
+                        <span
+                            className="text-glow text-foreground">King • DEV</span> Portfolio
                     </span>
                 </a>
 
-            {/*  Desktop Navbar  */}
+                {/*  Desktop Navbar  */}
                 <div className="hidden md:flex space-x-8">
                     {navItems.map((item, key) => (
-                        <a href={item.href} key={key} className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                        <a href={item.href} key={key}
+                           className="text-foreground/80 hover:text-primary transition-colors duration-300">
                             {item.name}
                         </a>
                     ))}
                 </div>
-            {/*  Mobile Navbar  */}
+                {/*  Mobile Navbar  */}
                 <button onClick={() => setIsMenuOpen((prev) => !prev)}
                         className="md:hidden p-2 text-foreground z-50"
                         aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
                 >
-                    {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                    {isMenuOpen ? <X size={24}/> : <Menu size={24}/>}
                 </button>
 
                 <div className={cn("fixed inset-0 bg-background/95" +
@@ -66,10 +70,10 @@ const Navbar = () => {
                                 {item.name}
                             </a>
                         ))}
-                    </div>
+                     </div>
                 </div>
             </div>
-            
+
         </nav>
     );
 };
